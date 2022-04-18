@@ -6,7 +6,7 @@ resource "aws_s3_bucket" "demo_config_bucket" {
   }
 }
 
-#
+# Replace awsAccount1|2|3Id with your aws accounts'id
 resource "aws_s3_bucket_policy" "aws_config_bucket_policy" {
   bucket = "demo-config-bucket"
   policy = <<POLICY
